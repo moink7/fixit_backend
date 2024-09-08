@@ -15,7 +15,6 @@ def ask_question():
     
     fastapi_response = requests.post(FASTAPI_URL, json={"question": user_input})
     
-    # Return the response from FastAPI
     return jsonify(fastapi_response.json())
 
 if __name__ == "__main__":
